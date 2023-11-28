@@ -97,6 +97,18 @@ body{
     background-size: cover;
     background-position: center; 
 }
+.container10{
+    background-image: linear-gradient(rgba(0,0,0,0.5),#009688), url('/images/r1.webp');
+    height: 70vh;
+    /* display: flex; */
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    /* width: 100%; */
+     /* background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(i5.jpg); */
+    background-size: cover;
+    background-position: center; 
+}
 .container9 .text{
     text-align: center;
     color: #fff;

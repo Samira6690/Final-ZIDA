@@ -15,10 +15,10 @@ class ProduitController extends Controller
     public function liste_produit(){
         $produit = Produit::all();
 
-   //  $styliste = auth()->user()->styliste;
-   //   $produits = $styliste->produits;
+  $styliste = auth()->user()->styliste;
+      $produits = $styliste->produits;
 
-   //  $produits = Produit::with('styliste')->get();
+     $produits = Produit::with('styliste')->get();
 
    return view('produit.liste', compact('produit'));
 }
@@ -35,7 +35,7 @@ class ProduitController extends Controller
            'montant' => 'required',
          'styliste_id' => 'required',
    ]);
-   // $styliste = auth()->user()->styliste;
+    $styliste = auth()->user()->styliste;
     $produit = new Produit();
        $produit->nom = $request->nom;
        $produit->montant = $request->montant;
@@ -57,6 +57,11 @@ public function update1_produit_traitement(Request $request)
        'nom' => 'required',
        'montant' => 'required',
      'styliste_id' => 'required',
+     'image' => 'required',
+      
+        'description',
+        'styliste_id',
+        'categorie_id',
 ]);
 $styliste = auth()->user()->styliste;
 $produit = new Produit([

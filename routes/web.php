@@ -22,7 +22,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/welcome', function () {
     return view('welcome');
 });
 
@@ -48,28 +48,12 @@ Route::get('/about', function () {
 });
 
 
-Route::get('/accueil', function () {
+ Route::get('/accueil', function () {
     return view('accueil');
 
-});
-Route::get('/styliste', function () {
-    return view('styliste');
-
-});
-Route::get('/femme', function () {
-    return view('femme');
-
-});
-Route::get('/inscription', function () {
-    return view('inscription');
-
-});
-Route::get('/emperor', function () {
-    return view('emperor');
-
-});
-Route::get('/ciseaux', function () {
-    return view('ciseaux');
+ });
+Route::get('/voir', function () {
+    return view('voir');
 
 });
 // Route::get('/nav', function () {
