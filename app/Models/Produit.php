@@ -10,7 +10,7 @@ use App\Models\Styliste;
 use App\Models\Produit;
 use App\Models\Commande;
 use App\Models\Commentaire;
-use App\Models\Catégorie;
+use App\Models\Categorie;
 use App\Models\Rendezvou;
 class Produit extends Model
 {

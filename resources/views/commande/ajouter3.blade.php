@@ -1,25 +1,29 @@
-@extends('layouts.app')
 
-@section('content')
-<div class="container">
-<h1>Ajouter un produit</h1>
+<h1>Creer une commande</h1>
 
 <hr>
-<form method="POST" action="/ajouter1/traitement/">
+<form method="POST" action="/ajouter3/traitement/">
     @csrf
     <div class="form-group">
-        <label for="nom">Nom</label>
-        <input type="text" class="form-control {{ $errors->has('nom') ? 'is-invalid' : '' }}"
-        id="nom" aria-describedby="nom" name="nom">
-        @if($errors->has('nom'))
-        <span class="invalid-feedback">{{ $errors->first('nom') }}</span>
+        <label for="date-commande">Date-commande</label>
+        <input type="text" class="form-control {{ $errors->has('date-commande') ? 'is-invalid' : '' }}"
+        id="date-commande" aria-describedby="date-commande" name="date-commande">
+        @if($errors->has('date-commande'))
+        <span class="invalid-feedback">{{ $errors->first('date-commande') }}</span>
         @endif
     </div>
     <div class="form-group">
-        <label for="montant">Montant</label>
-<textarea name="montant" id="montant" class="form-control  {{ $errors->has('montant') ? 'is-invalid' : '' }}" cols="30" rows="10"></textarea>
-@if($errors->has('montant'))
-<span class="invalid-feedback">{{ $errors->first('montant') }}</span>
+        <label for="montant">Prix-avance</label>
+<input type="text" name="prix-avance" id="prix-avance" class="form-control  {{ $errors->has('prix-avance') ? 'is-invalid' : '' }}"></input>
+@if($errors->has('prix-avance'))
+<span class="invalid-feedback">{{ $errors->first('prix-avance') }}</span>
+@endif
+  </div>
+<div class="form-group">
+        <label for="quantité">Quantité</label>
+<input type="text" name="quantité" id="quantité" class="form-control  {{ $errors->has('quantité') ? 'is-invalid' : '' }}"></input>
+@if($errors->has('quantité'))
+<span class="invalid-feedback">{{ $errors->first('quantité') }}</span>
 @endif
   </div>
   <div class="mb-3">
@@ -30,6 +34,14 @@
             {{ $styliste->nom_entreprise }}
         </option>
         @endforeach
+</select>
+<select class="form-select" aria-label="Default select example" name="produit">
+    <option value="selected">Sélectionnez un produit</option>
+    @foreach ($produits as $produit)
+    <option value="{{ $produit->id }}">
+        {{ $produit->produit }}
+    </option>
+    @endforeach
 </select>
 </div>
 <button type="submit" class="btn btn-success">Ajouter un produit</button>

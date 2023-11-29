@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Catégorie;
+use App\Models\Categorie;
 use App\Models\Commande;
 use App\Models\Commentaire;
 use App\Models\Produit;
@@ -95,11 +95,8 @@ class StylisteController extends Controller
         // $commentaires = Commentaire::all();
         // $rendezvous = Rendezvou::all();
         $styliste->update();
-
         return redirect('/styliste')->with('status', 'Le styliste a bien été modifier avec susses');
-
     }
-
     public function delete_styliste($id)
     {
         $styliste = Styliste::find($id);

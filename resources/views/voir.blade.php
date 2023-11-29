@@ -30,7 +30,7 @@
           <p>COLLECTIONS</p>
           <h3>Admirez nos merveilles</h3>
         </div>
-        <h3 class="title-text">Collection homme</h3>
+        <h3 class="title-text">Collection ma patrie</h3>
 
     <div class="row">
       <div class="box">
@@ -55,7 +55,7 @@
         <div class="image">
           <img src="{{ asset('images/r3.webp') }}" alt="">
         </div>
-    
+
       </div>
       <a href="" class="b2">Découvrez plus</a>
     </div>
@@ -65,7 +65,7 @@
           <p>COLLECTIONS</p>
           <h3>Admirez nos merveilles</h3>
         </div>
-        <h3 class="title-text">Collection femme</h3>
+        <h3 class="title-text">Collection espoir</h3>
 
     <div class="row">
       <div class="box">
@@ -90,7 +90,7 @@
         <div class="image">
           <img src="{{ asset('images/r4.webp') }}" alt="">
         </div>
-    
+
       </div>
       <a href="" class="b2">Découvrez plus</a>
     </div>
@@ -104,7 +104,7 @@
               <div>
                 <h1>Tenue de soirée</h1>
                 <p>6000fr</p>
-                
+
               </div>
             </div>
         </div>
@@ -114,7 +114,7 @@
               <div>
                 <h1>tenue simple</h1>
                 <p>4000fr</p>
-               
+
               </div>
             </div>
           </div>
@@ -124,7 +124,7 @@
                 <div>
                   <h1>Tenue de soirée</h1>
                   <p>6000fr</p>
-                  
+
                 </div>
               </div>
           </div>
@@ -134,7 +134,7 @@
                 <div>
                   <h1>Tenue de soirée</h1>
                   <p>6000fr</p>
-                  
+
                 </div>
               </div>
           </div>
@@ -154,12 +154,12 @@
                 <div>
                   <h1>Tenue de soirée</h1>
                   <p>6000fr</p>
-                  
+
                 </div>
               </div>
           </div>
         </div>
-        </section><br><br><br> 
+        </section><br><br><br>
 <!-- Back to Top -->
 <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
 

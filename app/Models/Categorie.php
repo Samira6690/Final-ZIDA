@@ -18,6 +18,7 @@ class Categorie extends Model
     use HasFactory;
     protected $fillable = [
         'nom',
+        'image',
     ];
     public function produit() {
         return $this->hasMany(Produit::class);

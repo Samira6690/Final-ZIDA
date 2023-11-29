@@ -22,7 +22,6 @@ return new class extends Migration
             $table->foreign('styliste_id')->references('id')->on('stylistes');
             $table->unsignedBigInteger('categorie_id');
             $table->foreign('categorie_id')->references('id')->on('categories');
-
             $table->timestamps();
         });
     }
