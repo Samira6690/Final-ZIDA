@@ -19,6 +19,12 @@ class ProduitController extends Controller
    return view('produit.liste', compact('produits'));
 }
 
+public function voir($id) 
+{
+        $produits = Produit::find($id);
+     return view('voir', compact('produits'));
+  }
+
    public function ajout_produit()
    {
     $categories = Categorie::all();
@@ -34,57 +40,52 @@ class ProduitController extends Controller
         'description' => 'required',
         'categorie' => 'required',
     ]);
-    if ($request->hasFile('image')) {
-        $photoPath = $request->file('image')->store('produits_images', 'public');
-        $validatedData['image'] = $photoPath;
-    }
-
+    // if ($request->hasFile('image')) {
+    //     $photoPath = $request->file('image')->store('produits_images', 'public');
+    //     $produit->image = $photoPath;
+    // }
     $user = auth()->user();
-    // $styliste = $user->styliste;
-    $produit = new Produit();
-    $produit->nom = $request->nom;
-    $produit->image = $validatedData['image']; // Utilisez la variable avec le chemin du fichier
-    $produit->montant = $request->montant;
-    $produit->description = $request->description;
-//  $produit->styliste_id = $styliste->id;
-    $produit->categorie = $request->categorie;
+    $styliste = $user->styliste;
+   $produit = new Produit();
+   $produit->nom = $request->nom;
+   $produit->montant = $request->montant;
+   $produit->image = $request->image;
+   $produit->description = $request->description;
+    $produit->styliste_id = $styliste->id;
+   $produit->categorie_id = $request->categorie;
     $produit->save();
 
     return redirect('/produit')->with('status', 'Le produit a bien été ajouté avec succès');
 }
-
-public function update1_produit($id)
+public function update_produit($id)
 {
-    $produits = Produit::find($id);
-    // $stylistes = Styliste::all();
-    return view('produit.update1', compact('categories'));
+    $produit = Produit::find($id);
+    $categories = Categorie::all();
+    return view('produit.update', compact('produit', 'categories'));
 }
-public function update1_produit_traitement(Request $request, $id)
+ public function update_produit_traitement(Request $request)
 {
+     $user = auth()->user();
     $request->validate([
         'nom' => 'required',
         'image' => 'required',
         'montant' => 'required',
         'description' => 'required',
-        // 'styliste_id' => 'required',
         'categorie' => 'required',
     ]);
-
-    $produit = Produit::find($id);
-
     if ($request->hasFile('image')) {
         $photoPath = $request->file('image')->store('produits_images', 'public');
         $produit->image = $photoPath;
     }
-
-    $produit->nom = $request->nom;
-    $produit->montant = $request->montant;
-    $produit->description = $request->description;
-    // $produit->styliste_id = $request->styliste_id;
-    $produit->categorie = $request->categorie;
-
+$user = auth()->user();
+$styliste = $user->styliste;
+$produit= new Produit();
+$produit->nom= $request->nom;
+$produit->montant= $request->montant;
+$produit->styliste_id= $request->styliste_id;
+$produit->categorie_id= $request->categorie;
+    
     $produit->save();
-
     return redirect('/produit')->with('status', 'Le produit a bien été modifié avec succès');
 }
 

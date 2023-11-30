@@ -31,5 +31,8 @@ class Styliste extends Model
     public function rendezvous() {
         return $this->hasMany(RendezVou::class);
     }
+    public function user() {
+        return $this->belongsTo(User::class);
+    }
 
 }

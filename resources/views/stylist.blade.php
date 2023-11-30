@@ -98,25 +98,28 @@
             <div class="text-center mb-5">
                 <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Stylistes</h5>
                 <h1>Rencontrez nos stylistes</h1>
-            </div>
+            </div>    
             <div class="row">
+                @foreach ($stylistes as $styliste)
                 <div class="col-md-6 col-lg-3 text-center team mb-4">
                     <div class="team-item rounded overflow-hidden mb-2">
                         <div class="team-img position-relative">
-                            <img class="img-fluid" src="{{asset('images/r11.webp')}}" alt="">
+                            <img class="img-fluid" src="/images/{{ $styliste->photo }}" alt="">
                             <div class="team-social">
-                                <a href="/voir"><button class="btn btn-secondary">voir</button></a>  
+                                <a href="/voir_produit/{{ $styliste->id}}"><button class="btn btn-secondary">voir</button></a>  
                                        </div>
                         </div>
                         <div class="bg-secondary p-4">
-                            <h5>Jhon Doe</h5>
-                            <p class="m-0">Styliste modéliste</p>
-                            <p>BOBO,belle ville</p>
-
+                            <h5>{{ $styliste->nom_entreprise }}</h5>
+                            <p class="m-0">{{ $styliste->contact}}</p>
+                            <p>{{ $styliste->localisation }}</p>
                         </div>
                     </div>
+                    @php
+                @endphp
+                @endforeach
                 </div>
-                <div class="col-md-6 col-lg-3 text-center team mb-4">
+                {{--  <div class="col-md-6 col-lg-3 text-center team mb-4">
                     <div class="team-item rounded overflow-hidden mb-2">
                         <div class="team-img position-relative">
                             <img class="img-fluid" src="{{ asset('images/r11.webp') }}" alt="">
@@ -235,7 +238,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>  --}}
       </div>
       <!-- Team End -->
 

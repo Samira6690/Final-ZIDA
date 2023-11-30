@@ -107,52 +107,31 @@ https://templatemo.com/tm-557-grad-school
                         <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">About Us</h5>
                         <h1>Styliste House</h1>
                     </div>
-                    <p>Styliste House est une application web dédiée aux stylistes. Publiez vos modèles et interagissez avec d/'autres stylistes talentueux. Rejoignez notre communauté passionnée dès aujourd'hui !</p>
+                    <p>
+                        <p>Bienvenue sur notre site dédié à l'art de la mode.Nos stylistes passionnés travaille dur pour vous offrir les dernières tendances et inspirations.</p>
+                    <p>Styliste House est une application web dédiée aux stylistes. Publiez vos modèles et interagissez avec d'autres stylistes talentueux. Rejoignez notre communauté passionnée dès aujourd'hui !</p>
+                   <p>: Connectez-vous avec d'autres stylistes du monde entier. Suivez vos créateurs préférés, échangez des conseils, et participez à des discussions animées sur les dernières tendances de la mode.</p>
                     <p>Montrez votre créativité en publiant vos modèles sur Styliste House. Ajoutez des photos attrayantes, des descriptions détaillées et attirez l'attention des clients à la recherche de stylistes talentueux.</p>
-                    {{--  <a href="{{ asset('/inscription') }}" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold mt-2">Inscrivez-vous maintenant</a>  --}}
+                    <a href="{{ asset('register') }}" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold mt-2">Inscrivez-vous maintenant</a>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container-fluid py-5">
-        <div class="container py-5">
-            <div class="text-center mb-5">
-                <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Testimonial</h5>
-                <h1>Les commentaires de nos clients</h1>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="owl-carousel testimonial-carousel">
-                        <div class="text-center">
-                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                            <h4 class="font-weight-normal mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</h4>
-                            <img class="img-fluid mx-auto mb-3" src="img/testimonial-1.jpg" alt="">
-                            <h5 class="m-0">Client Name</h5>
-                            <span>Profession</span>
-                        </div>
-                        <div class="text-center">
-                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                            <h4 class="font-weight-normal mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</h4>
-                            <img class="img-fluid mx-auto mb-3" src="img/testimonial-2.jpg" alt="">
-                            <h5 class="m-0">Client Name</h5>
-                            <span>Profession</span>
-                        </div>
-                        <div class="text-center">
-                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                            <h4 class="font-weight-normal mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</h4>
-                            <img class="img-fluid mx-auto mb-3" src="img/testimonial-3.jpg" alt="">
-                            <h5 class="m-0">Client Name</h5>
-                            <span>Profession</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <section class="projet">
+        <h1 class="text-center">Pourquoi Rejoindre Styliste House</h1>
+        <p>Styliste House n'est pas simplement une plateforme, c'est une communauté vibrante </p>
+<p>Styliste House offre la possibilité aux stylistes de découvrir des opportunités professionnelles telles que collaborations, défilés de mode, et bien plus encore. Restez informé sur les événements et les concours à venir.</p>
+        <p>où la passion de la mode se rencontre. Que vous soyez un styliste émergent ou un professionnel chevronné, Styliste House vous offre une plateforme pour présenter votre talent, élargir votre réseau et inspirer le monde de la mode.
+</p>
+<p>Rejoignez-nous sur Styliste House et laissez votre créativité s'épanouir !
+</p>
+    </section>
 
 
 
-    <!-- Footer Start -->
+
+
+    {{--  <!-- Footer Start -->
     <div class="container-fluid bg-dark text-white py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
         <div class="row pt-5">
             <div class="col-lg-7 col-md-12">
@@ -219,8 +198,8 @@ https://templatemo.com/tm-557-grad-school
             </div>
         </div>
     </div>
-   
 
+  --}}
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>

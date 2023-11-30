@@ -18,29 +18,30 @@
   <link rel="stylesheet" href="{{ asset('assets/css/templatemo-grad-school.css') }}">
   {{--  <link rel="stylesheet" href="{{ asset('assets/css/owl.css')}} ">  --}}
   {{--  <link rel="stylesheet" href="{{asset ('assets/css/lightbox.css')}} ">  --}}
-  <title>Styliste</title>
+  <title>Gallery</title>
 </head>
 @include ('nav')
 <body>
     <section class="container10">
     </section>
-
     <section class="team">
         <div class="title-text">
           <p>COLLECTIONS</p>
           <h3>Admirez nos merveilles</h3>
         </div>
-        <h3 class="title-text">Collection ma patrie</h3>
-
+        {{--  <h3 class="title-text">{{ $produit->$categorie->nom}}</h3>  --}}
+    
     <div class="row">
+        @foreach ($produits as $produit)
       <div class="box">
         <div class="image">
-          <img src="{{ asset('images/r3.webp') }}" alt="">
+          <img src="/images/{{ $produit->image }}" alt="">
         </div>
-         <!-- <div class="content">
-          </div>
-        </div>  -->
-      </div>
+        </div>  
+        @php
+        @endphp
+        @endforeach
+      {{--  </div>
       <div class="box">
         <div class="image">
           <img src="{{ asset('images/r3.webp') }}" alt="">
@@ -56,17 +57,16 @@
           <img src="{{ asset('images/r3.webp') }}" alt="">
         </div>
 
-      </div>
+      </div>  --}}
       <a href="" class="b2">Découvrez plus</a>
     </div>
       </section>
-      <section class="team">
-        <div class="title-text">
+      {{--  <section class="team">  --}}
+        {{--  <div class="title-text">
           <p>COLLECTIONS</p>
           <h3>Admirez nos merveilles</h3>
-        </div>
-        <h3 class="title-text">Collection espoir</h3>
-
+        </div>  --}}
+        {{--  <h3 class="title-text">Collection harmattan</h3>
     <div class="row">
       <div class="box">
         <div class="image">
@@ -94,7 +94,7 @@
       </div>
       <a href="" class="b2">Découvrez plus</a>
     </div>
-      </section>
+      </section>  --}}
      <section class="destination">
       <h1 class="title">Nos belles créations</h1>
         <div class="content">

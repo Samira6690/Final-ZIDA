@@ -156,9 +156,9 @@
   </div>
 </header>
 
-@include('produit.nav3')
+@include('styliste.nav2')
 
-      <a href="/ajouter"><button class="btn btn-primary">Ajouter</button></a>
+      <a href="/ajout"><button class="btn btn-primary">Ajouter</button></a>
       <div class="table-responsive small">
         <table class="table table-striped table-sm">
             <thead>
@@ -178,10 +178,10 @@
             @foreach ($produits as $produit)
                 <tr>
                   <td>{{ $produit->nom }}></td>
-                  <td><img src="/images/{{ $image->image }}" alt="" style="width: 60px; height: 60px; border-radius: 50px"></td>
+                  <td><img src="/images/{{ $produit->image }}" alt="" style="width: 60px; height: 60px; border-radius: 50px"></td>
                   <td>{{ $produit->montant }}</td>
                 <td>{{ $produit->description }}</td>
-                <td>{{ $produit->categorie }}</td>
+                <td>{{ $produit->categorie->nom }}</td>
                   <td><a href="/update-produit/{{ $produit->id }}"><button style="background-color: blue";>update</button></a></td>
                   <td><a href="/delete-produit/{{ $produit->id }}"><button style="background-color: red";>delete</button></a></td>
                 </tr>

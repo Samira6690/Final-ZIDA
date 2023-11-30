@@ -97,8 +97,8 @@ https://templatemo.com/tm-557-grad-school
       <img src="{{ asset('images/r10.webp') }}" width="250" alt="">
     </div>
     <div class="tenu1">
-      <h3> faso danfani</h3>
-      <p>Lorem ipsum dolor sit amet consectetur <br>deserunt laudantium tempora dicta</p>
+      <h3> robe</h3>
+      <p>avec du koko-donda</p>
       <p>Prix: <span>5$</span></p>
       <p>Taille: <span>M</span></p>
       <button class="btn btn-secondary" style="background: blue;">Acheté</button>
@@ -108,20 +108,20 @@ https://templatemo.com/tm-557-grad-school
     </div>
     <div class="tenu1">
       <h3> faso danfani</h3>
-      <p>Lorem ipsum dolor sit amet <br>deserunt laudantium tempora dicta</p>
-      <p>Prix: <span>5$</span></p>
+      <p>pour tout occasion</p>
+      <p>Prix: <span>4000FR</span></p>
       <p>Taille: <span>Xl</span></p>
       <button class="btn btn-secondary" style="background: blue;">Acheté</button>
     </div>
   </section>
   <!-- <section class="tenu">
   <div>
-      <img src="{{ asset('images/r11.webp') }}" width="300" alt="">
+      <img src="{{ asset('images/r8.webp') }}" width="300" alt="">
     </div>
     <div class="tenu1">
-      <h3>Tenu avec faso danfani</h3>
-      <p>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Obcaecati voluptates, <br> rem mollitia possimus ut autem <br>deserunt laudantium tempora dicta</p>
-      <p>Prix: <span>5$</span></p>
+      <h3>chemise</h3>
+      <p>Robe pour tous cérémonie</p>
+      <p>Prix: <span>15000fr</span></p>
       <p>Taille: <span>Xl</span></p>
       <button class="btn btn-secondary" style="background: blue;">Voir plus</button>
     </div>
@@ -132,20 +132,20 @@ https://templatemo.com/tm-557-grad-school
       <img src="{{ asset('images/r9.webp') }}" width="250" alt="">
     </div>
     <div class="tenu1">
-      <h3>faso danfani</h3>
-      <p>Lorem ipsum dolor sit amet consectetur,<br>deserunt laudantium tempora dicta</p>
-      <p>Prix: <span>5$</span></p>
-      <p>Taille: <span>Xxl</span></p>
+      <h3>robe</h3>
+      <p>fais à base du tissu koko-donda</p>
+      <p>Prix: <span>5000FR</span></p>
+      <p>Taille: <span>l</span></p>
       <button class="btn btn-secondary" style="background: blue;">Acheté</button>
     </div>
     <div>
-      <img src="{{ asset('images/r8.webp') }}" width="250" alt="">
+      <img src="{{ asset('images/r11.webp') }}" width="250" alt="">
     </div>
     <div class="tenu1">
-      <h3>faso danfani</h3>
-      <p>Lorem ipsum dolor sit amet consectetur <br>deserunt laudantium tempora dicta</p>
+      <h3>Chemise</h3>
+      <p>avec du tissu koko-donda</p>
       <p>Prix: <span>5$</span></p>
-      <p>Taille: <span>Xxl</span></p>
+      <p>Taille: <span>xl</span></p>
       <button class="btn btn-secondary" style="background: blue;">Acheté</button>
     </div>
   </section>
@@ -160,14 +160,6 @@ https://templatemo.com/tm-557-grad-school
     <div class="image">
       <img src="{{ asset('images/r1.webp') }}" alt="">
     </div>
-     <!-- <div class="content">
-      <div class="social">
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-twitter"></i>
-        <i class="fa-brands fa-youtube"></i>
-      </div>
-    </div>  -->
   </div>
   <div class="box">
     <div class="image">
@@ -194,14 +186,6 @@ https://templatemo.com/tm-557-grad-school
         <div class="image">
           <img src="{{ asset('images/r5.webp') }}" alt="">
         </div>
-        <!-- <div class="content">
-          <div class="social">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-youtube"></i>
-          </div>
-        </div> -->
       </div>
       <div class="box">
         <div class="image">
@@ -236,7 +220,7 @@ https://templatemo.com/tm-557-grad-school
                       </div>
                       <p>Styliste House est une application web dédiée aux stylistes. Publiez vos modèles et interagissez avec d/'autres stylistes talentueux. Rejoignez notre communauté passionnée dès aujourd'hui !</p>
                       <p>Montrez votre créativité en publiant vos modèles sur Styliste House. Ajoutez des photos attrayantes, des descriptions détaillées et attirez l'attention des clients à la recherche de stylistes talentueux.</p>
-                      <a href="{{ asset('/inscription') }}" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold mt-2">Inscrivez-vous maintenant</a>
+                      <a href="{{ asset('register') }}" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold mt-2">Inscrivez-vous maintenant</a>
                   </div>
               </div>
           </div>

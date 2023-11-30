@@ -52,10 +52,9 @@ Route::get('/about', function () {
     return view('accueil');
 
  });
-Route::get('/voir', function () {
-    return view('voir');
-
-});
+// Route::get('/voir', function () {
+//     return view('voir');
+// });
 // Route::get('/nav', function () {
 //     return view('nav');
 
@@ -64,10 +63,12 @@ Route::get('/footer', function () {
     return view('footer');
 
 });
-Route::get('/stylist', function () {
-    return view('stylist');
+// Route::get('/stylist', function () {
+//     return view('stylist');
+// });
+Route::get('/stylist',[StylisteController::class, 'stylist']);
+Route::get('/voir_produit/{id}' ,[ProduitController::class, 'voir']);
 
-});
 Route::get('/doigt', function () {
     return view('doigt');
 });
@@ -90,8 +91,8 @@ Route::get('/styliste',[StylisteController::class, 'liste_styliste']);
 
 /* produit route*/
 Route::get('/delete-produit/{id}',[ProduitController::class, 'delete_produit']);
-Route::post('/update1/traitement',[ProduitController::class, 'update1_produit_traitement']);
-Route::get('/update1-produit/{id}',[ProduitController::class, 'update1_produit']);
+Route::post('/update/traitement',[ProduitController::class, 'update_produit_traitement']);
+Route::get('/update-produit/{id}',[ProduitController::class, 'update_produit']);
 
 Route::post('/ajout/traitement/',[ProduitController::class, 'ajout_produit_traitement']);
 Route::get('/ajout',[ProduitController::class, 'ajout_produit']);

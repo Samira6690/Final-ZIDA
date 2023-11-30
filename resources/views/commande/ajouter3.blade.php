@@ -31,7 +31,7 @@
         <option value="selected">Sélectionnez un styliste</option>
         @foreach ($stylistes as $styliste)
         <option value="{{ $styliste->id }}">
-            {{ $styliste->nom_entreprise }}
+            {{ $styliste->nom }}
         </option>
         @endforeach
 </select>
@@ -39,7 +39,7 @@
     <option value="selected">Sélectionnez un produit</option>
     @foreach ($produits as $produit)
     <option value="{{ $produit->id }}">
-        {{ $produit->produit }}
+        {{ $commande-> }}
     </option>
     @endforeach
 </select>
@@ -49,3 +49,8 @@
 </form>
 </div>
 @endsection
+<script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.2.1/dist/chart.umd.min.js" integrity="sha384-gdQErvCNWvHQZj6XZM0dNsAoY4v+j5P1XDpNkcM3HJG1Yx04ecqIHk7+4VBOCHOG" crossorigin="anonymous"></script>
+<script src="dashboard.js"></script>
+</body>
+</html>

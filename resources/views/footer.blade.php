@@ -61,10 +61,10 @@
               <div class="col-lg-7 col-md-12">
                   <div class="row">
                       <div class="col-md-6 mb-5">
-                          <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">Get In Touch</h5>
-                          <p><i class="fa fa-map-marker-alt mr-2"></i>123 Street, New York, USA</p>
-                          <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
-                          <p><i class="fa fa-envelope mr-2"></i>info@example.com</p>
+                          <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">Styliste House</h5>
+                          <p><i class="fa fa-map-marker-alt mr-2"></i>sect 18,bobo Burkina faso</p>
+                          <p><i class="fa fa-phone-alt mr-2"></i>+ 226 66902531</p>
+                          <p><i class="fa fa-envelope mr-2"></i>stylistehouse@gmail.com</p>
                           <div class="d-flex justify-content-start mt-4">
                               <a class="btn btn-outline-light btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
                               <a class="btn btn-outline-light btn-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
@@ -73,20 +73,20 @@
                           </div>
                       </div>
                       <div class="col-md-6 mb-5">
-                          <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">Our Courses</h5>
+                          <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">Fonctionnalités</h5>
                           <div class="d-flex flex-column justify-content-start">
-                              <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Web Design</a>
-                              <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Apps Design</a>
-                              <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Marketing</a>
-                              <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Research</a>
-                              <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>SEO</a>
+                              <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Profil Styliste</a>
+                              <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Categories</a>
+                              <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Produits</a>
+                              <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Commandes</a>
+                              <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>Rendez-vous</a>
                           </div>
                       </div>
                   </div>
               </div>
               <div class="col-lg-5 col-md-12 mb-5">
                   <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">Newsletter</h5>
-                  <p>Rebum labore lorem dolores kasd est, et ipsum amet et at kasd, ipsum sea tempor magna tempor. Accu kasd sed ea duo ipsum. Dolor duo eirmod sea justo no lorem est diam</p>
+                  <p>Faites confiances à Styliste House,recherchez nos stylistes pour tous besoins</p>
                   <div class="w-100">
                       <div class="input-group">
                           <input type="text" class="form-control border-light" style="padding: 30px;" placeholder="Your Email Address">

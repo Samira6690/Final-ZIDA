@@ -8,7 +8,13 @@
           </div>
           <div class="offcanvas-body d-md-flex flex-column p-0 pt-lg-3 overflow-y-auto">
             <ul class="nav flex-column">
-              <li class="nav-item">
+                <li class="nav-item">
+                    <a class="nav-link d-flex align-items-center gap-2 active" aria-current="page" href="/Wecome">
+                      <svg class="bi"><use xlink:href="#house-fill"/></svg>
+                     Accueil
+                    </a>
+                  </li>
+                <li class="nav-item">
                 <a class="nav-link d-flex align-items-center gap-2 active" aria-current="page" href="/styliste">
                   <svg class="bi"><use xlink:href="#house-fill"/></svg>
                   Stylistes
@@ -104,12 +110,27 @@
           <h1 class="h2">Dashboard</h1>
           <div class="btn-toolbar mb-2 mb-md-0">
             <div class="btn-group me-2">
-              <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
-              <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
-            </div>
+                <div class="btn-group me-2">
+                    @auth  
+                        <a href="/dashboard">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">
+                                {{ Auth::user()->name }}
+                            </button>
+                        </a>
+                        <form method="POST" action="{{ route('logout') }}">
+                            @csrf
+                            <button class="se_deconnecter pt-2">{{ __('Deconnexion') }}</button>
+                        </form>
+                    @else
+                        <a href="{{ route('register') }}" class="btn btn-outline-light">Inscription</a>
+                        <a href="{{ route('login') }}" class="btn btn-outline-light ms-2">Connexion</a>
+                    @endauth
+                </div>
+                
             <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle d-flex align-items-center gap-1">
               <svg class="bi"><use xlink:href="#calendar3"/></svg>
-              This week
+            this week
             </button>
           </div>
         </div>
+    </div>

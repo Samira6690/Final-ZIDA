@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
-
+use App\Models\Styliste;
 class User extends Authenticatable
 {
     use CrudTrait;
@@ -47,5 +47,8 @@ class User extends Authenticatable
     ];
     public function role(){
         return $this->belongsTo(Rolename::class);
+    }
+    public function styliste(){
+        return $this->hasOne(Styliste::class);
     }
 }

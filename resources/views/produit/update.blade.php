@@ -23,8 +23,9 @@
 <h1>Modifier un produit</h1>
 
 <hr>
-<form method="POST" action="/update1/traitement">
+<form method="POST" action="/update/traitement">
     @csrf
+    <input type="text" name="id" style="display:none" value="{{ $produit->id}}">
     <div class="form-group">
         <label for="nom">Nom</label>
         <input type="text" value="{{$produit->nom}}" class="form-control {{ $errors->has('nom') ? 'is-invalid' : '' }}"
@@ -56,8 +57,8 @@
 </div>
 
 <div class="mb-3">
-    <select class="form-select" aria-label="Default select example" name="categorie_id">
-        <option value="selected">Sélectionnez une categorie_id</option>
+    <select class="form-select" aria-label="Default select example" name="categorie">
+        <option value="{{ $produit->categorie->id }}">{{ $produit->categorie->nom }}</option>
         @foreach ($categories as $categorie)
         <option value="{{ $categorie->id }}">
             {{ $categorie->nom }}
@@ -72,6 +73,4 @@
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.2.1/dist/chart.umd.min.js" integrity="sha384-gdQErvCNWvHQZj6XZM0dNsAoY4v+j5P1XDpNkcM3HJG1Yx04ecqIHk7+4VBOCHOG" crossorigin="anonymous"></script>
 <script src="dashboard.js"></script>
 </body>
-
-
 </html>

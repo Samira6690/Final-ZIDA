@@ -16,8 +16,13 @@ class StylisteController extends Controller
     {
 
         $stylistes = Styliste::all();
-
         return view('styliste.liste', compact('stylistes'));
+    }
+
+    public function stylist()
+    {
+    $stylistes = Styliste::all();
+    return view('stylist', compact('stylistes'));
     }
 
     public function ajouter_styliste()
@@ -54,7 +59,6 @@ class StylisteController extends Controller
 
         return redirect('/styliste')->with('status', 'Le styliste a bien été ajouté avec success');
     }
-
     public function update_styliste($id)
     {
         $styliste = Styliste::find($id);
