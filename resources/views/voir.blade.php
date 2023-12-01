@@ -24,49 +24,46 @@
 <body>
     <section class="container10">
     </section>
-    <section class="team">
+    <section class="team">  
         <div class="title-text">
+            <p>COLLECTIONS</p>
+            <h3>Admirez nos merveilles</h3>
+          </div>  
+          <h3 class="title-text">Collection soleil</h3>
+      <div class="row">
+        <div class="box">
+          <div class="image">
+            <img src="{{ asset('images/r1.webp') }}" alt="">
+          </div>
+           <!-- <div class="content">
+            </div>
+          </div>  -->
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="{{ asset('images/r2.webp') }}" alt="">
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="{{ asset('images/r1.webp') }}" alt="">
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="{{ asset('images/r4.webp') }}" alt="">
+          </div>
+  
+        </div>
+        <a href="" class="b2">Découvrez plus</a>
+      </div>
+        </section> 
+        <section class="team">  
+      {{--  <div class="title-text">
           <p>COLLECTIONS</p>
           <h3>Admirez nos merveilles</h3>
-        </div>
-        {{--  <h3 class="title-text">{{ $produit->$categorie->nom}}</h3>  --}}
-    
-    <div class="row">
-        @foreach ($produits as $produit)
-      <div class="box">
-        <div class="image">
-          <img src="/images/{{ $produit->image }}" alt="">
-        </div>
-        </div>  
-        @php
-        @endphp
-        @endforeach
-      {{--  </div>
-      <div class="box">
-        <div class="image">
-          <img src="{{ asset('images/r3.webp') }}" alt="">
-        </div>
-      </div>
-      <div class="box">
-        <div class="image">
-          <img src="{{ asset('images/r3.webp') }}" alt="">
-        </div>
-      </div>
-      <div class="box">
-        <div class="image">
-          <img src="{{ asset('images/r3.webp') }}" alt="">
-        </div>
-
-      </div>  --}}
-      <a href="" class="b2">Découvrez plus</a>
-    </div>
-      </section>
-      {{--  <section class="team">  --}}
-        {{--  <div class="title-text">
-          <p>COLLECTIONS</p>
-          <h3>Admirez nos merveilles</h3>
-        </div>  --}}
-        {{--  <h3 class="title-text">Collection harmattan</h3>
+        </div>    --}}
+        <h3 class="title-text">Collection harmattan</h3>
     <div class="row">
       <div class="box">
         <div class="image">
@@ -94,7 +91,7 @@
       </div>
       <a href="" class="b2">Découvrez plus</a>
     </div>
-      </section>  --}}
+      </section> 
      <section class="destination">
       <h1 class="title">Nos belles créations</h1>
         <div class="content">
@@ -127,6 +124,26 @@
 
                 </div>
               </div>
+          </div>
+          <div class="box">
+            <img src="{{ asset('images/r1.webp') }}" alt="">
+            <div class="content">
+                <div>
+                  <h1>Tenue de soirée</h1>
+                  <p>6000fr</p>
+
+                </div>
+              </div>
+          </div>
+          <div class="box">
+            <img src="{{ asset('images/r2.webp') }}" alt="">
+            <div class="content">
+              <div>
+                <h1>Emperor Styliste</h1>
+                <p>Koudougou,sect 02</p>
+                <a href="#">Lire plus</a>
+              </div>
+            </div>
           </div>
           <div class="box">
             <img src="{{ asset('images/r1.webp') }}" alt="">

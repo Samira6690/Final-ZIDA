@@ -9,6 +9,7 @@ use App\Http\Controllers\CommandeController;
 use App\Http\Controllers\RendezvouController;
 use App\Http\Controllers\TransactionController;
 use App\Http\Controllers\CommentaireController;
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,9 +23,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/welcome', function () {
-    return view('welcome');
-});
+// Route::get('/welcome', function () {
+//     return view('welcome');
+// });
+Route::get('/',[HomeController::class, 'index']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -48,10 +50,10 @@ Route::get('/about', function () {
 });
 
 
- Route::get('/accueil', function () {
-    return view('accueil');
+//  Route::get('/accueil', function () {
+//     return view('accueil');
 
- });
+//  });
 // Route::get('/voir', function () {
 //     return view('voir');
 // });

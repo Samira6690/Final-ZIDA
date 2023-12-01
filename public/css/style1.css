@@ -35,7 +35,13 @@
   --font-family-sans-serif: "Poppins", sans-serif;
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
-
+.projet p{
+font-size: 20px;
+}
+.projet h1{
+    font-size: 25px;
+    color: #17a2b8;
+}
 *,
 *::before,
 *::after {

@@ -1,4 +1,4 @@
-<!doctype html>
+ <!doctype html>
 <html lang="en" data-bs-theme="auto">
   <head><script src="{{asset('js/color-modes.js')}}"></script>
     <meta charset="utf-8">
@@ -27,7 +27,7 @@
     @csrf
     <div class="form-group">
         <label for="nom_entreprise">Nom_entreprise</label>
-        <input type="text" value="{{$styliste->nom_entreprise}}" class="form-control {{ $errors->has('nom_entreprise') ? 'is-invalid' : '' }}"
+        <input type="text" value="{{ $styliste->nom_entreprise}}" class="form-control {{ $errors->has('nom_entreprise') ? 'is-invalid' : '' }}"
         id="nom_entreprise" aria-describedby="nom_entreprise" name="nom_entreprise">
         @if($errors->has('nom_entreprise'))
         <span class="invalid-feedback">{{ $errors->first('nom_entreprise') }}</span>

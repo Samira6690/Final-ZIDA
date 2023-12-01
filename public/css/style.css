@@ -161,7 +161,8 @@ body{
     background-position: center; 
 }
 .container3{
-    background-image: linear-gradient(rgba(0,0,0,0.1),#333), url(aa4.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.5),#009688), url('/images/r1.webp');
+
     /* min-height: 100vh; */
     height: 70vh;
     display: flex;

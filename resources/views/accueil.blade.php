@@ -120,7 +120,7 @@ https://templatemo.com/tm-557-grad-school
     </div>
     <div class="tenu1">
       <h3>chemise</h3>
-      <p>Robe pour tous cérémonie</p>
+      <p>porter pour tous occasion</p>
       <p>Prix: <span>15000fr</span></p>
       <p>Taille: <span>Xl</span></p>
       <button class="btn btn-secondary" style="background: blue;">Voir plus</button>
@@ -211,11 +211,11 @@ https://templatemo.com/tm-557-grad-school
           <div class="container py-5">
               <div class="row align-items-center">
                   <div class="col-lg-5">
-                      <img class="img-fluid rounded mb-4 mb-lg-0" src="{{ asset('images/img/about.jpg') }}" alt="">
+                      <img class="img-fluid rounded mb-4 mb-lg-0" width="350px" height="300px" src="{{ asset('images/m1.jpg') }}" alt="">
                   </div>
                   <div class="col-lg-7">
                       <div class="text-left mb-4">
-                          <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">About Us</h5>
+                          <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">A Propos</h5>
                           <h1>Styliste House</h1>
                       </div>
                       <p>Styliste House est une application web dédiée aux stylistes. Publiez vos modèles et interagissez avec d/'autres stylistes talentueux. Rejoignez notre communauté passionnée dès aujourd'hui !</p>

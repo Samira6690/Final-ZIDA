@@ -61,7 +61,7 @@ class StylisteController extends Controller
     }
     public function update_styliste($id)
     {
-        $styliste = Styliste::find($id);
+         $styliste = Styliste::find($id);
         // $produits = Produit::all();
         // $catégories = Catégorie::all();
         // $commandes = Commande::all();
